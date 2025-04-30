@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container">
       <h1>MOEDINHAS</h1>
-      <div className="input-display">0,00 BRL</div>
+      <input className="input-display" type="number" placeholder="0,00 BRL"/>
       <p className="label">Converter para</p>
       <div className="grid">
         <div className="card">
