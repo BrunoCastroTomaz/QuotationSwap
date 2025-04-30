@@ -33,7 +33,7 @@ h1 {
 }
 
 .grid {
-  display: flex;
+  display: flex; /* flexbox automaticamente é linha e não coluna */
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
