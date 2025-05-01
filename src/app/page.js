@@ -9,7 +9,7 @@ export default function Home() {
       <h1>MOEDINHAS</h1> 
       {/* título */}
       <input className="input-display" type="number" placeholder="0,00 BRL"/> 
-      {/* exibe o valor em reais, depois será alterado para o valor digitado pelo usuário */}
+      {/*input insere o valor em reais*/}
       <p className="label">Converter para</p>
       <div className="grid">
         {/* div onde ficam as moedas, cada uma em um card com o valor e o nome */}
@@ -34,3 +34,5 @@ export default function Home() {
     </div>
   );
 }
+
+
