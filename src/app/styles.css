@@ -55,26 +55,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-.card {
-  background-color: #2a2a2a;
-  border-radius: 10px;
-  padding: 20px;
-  width: 100px;
-  text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.card span {
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.card p {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
 footer {
   font-size: 12px;
   color: #999;

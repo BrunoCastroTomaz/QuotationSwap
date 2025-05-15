@@ -1,4 +1,6 @@
-import './styles.css'; 
+import Card from './components/Card';
+import './styles.css';
+import './components/Card.module.css'
 
 export default function Home() {
   // export permite que o componente seja utilizado em outros arquivos
@@ -13,22 +15,10 @@ export default function Home() {
       <p className="label">Converter para</p>
       <div className="grid">
         {/* div onde ficam as moedas, cada uma em um card com o valor e o nome */}
-        <div className="card">
-          <span>CNY</span>
-          <p>0,00</p>
-        </div>
-        <div className="card">
-          <span>BTC</span>
-          <p>0,00</p>
-        </div>
-        <div className="card">
-          <span>USD</span>
-          <p>0,00</p>
-        </div>
-        <div className="card">
-          <span>ETH</span>
-          <p>0,00</p>
-        </div>
+        <Card sigla="CNY" valor="0,00"></Card>
+        <Card sigla="BTC" valor="0,00"></Card>
+        <Card sigla="USD" valor="0,00"></Card>
+        <Card sigla="ETH" valor="0,00"></Card>
       </div>
       <footer>grupo © 2025</footer>
     </div>
