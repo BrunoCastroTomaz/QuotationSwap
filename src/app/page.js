@@ -1,6 +1,5 @@
 import Card from './components/Card';
 import './styles.css';
-import './components/Card.module.css'
 
 export default function Home() {
   // export permite que o componente seja utilizado em outros arquivos
@@ -20,7 +19,6 @@ export default function Home() {
         <Card sigla="USD" valor="0,00"></Card>
         <Card sigla="ETH" valor="0,00"></Card>
       </div>
-      <footer>grupo © 2025</footer>
     </div>
   );
 }
