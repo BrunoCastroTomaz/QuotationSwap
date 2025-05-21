@@ -1,5 +1,12 @@
 
 /*estilos glabais que s`ao aplicados para todas as páginas */
+/* Para Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -52,3 +59,29 @@ footer {
   text-align: center;
 }
 
+
+.input-display {
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 64px;
+  font-family: 'Arial Rounded MT', Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: none;
+  border-radius: 12px;
+  width: 600px;
+  height: 115px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: none;
+
+  /* Remove o spinner (botão do input)*/
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input::placeholder {
+  font-size: 64;
+  text-align: center;
+  padding-top: 3;
+  font-family: 'Arial Rounded MT', Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
