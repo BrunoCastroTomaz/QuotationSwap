@@ -25,7 +25,7 @@ export default function Moeda (){
 
     return (
         <Container>
-            <Input valor={inputValor ? inputValor : valorMoeda / cotacao} onValorChange={(novoValor) => setValor(novoValor)}></Input>
+            <Input valor={inputValor ? inputValor : parseFloat((valorMoeda / cotacao).toFixed(2))} onValorChange={(novoValor) => setValor(novoValor)}></Input>
             <LargeCard nome={nome} valorMoeda={inputValor ? inputValor * cotacao : valorMoeda}></LargeCard>
             <Grid>
                 <GreenLabel text={`${variacaoPercentual}%`}></GreenLabel>
