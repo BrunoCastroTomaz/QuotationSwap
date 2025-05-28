@@ -1,0 +1,84 @@
+.card {
+    transition: 0.5s ease;
+
+    height: 140px;
+    width: 140px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    background-color: #111111;
+    color:rgb(245, 245, 245);
+}
+
+.card p {
+    margin: 0;
+}
+
+.card:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    border-radius: 32px;
+    
+    color: rgb(128, 226, 128);
+    background: #111111;
+}
+
+#nome {
+    font-size: 40px;
+}
+
+#valorMoeda {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        height: 160px;
+        width: 160px;
+    }
+
+    #nome {
+    font-size: 44px;
+}
+
+    #valorMoeda {
+        font-size: 24px;
+    }
+}
+
+.largeCard {
+    transition: 0.5s ease;
+
+    height: 140px;
+    width: 373px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    background-color: rgba(22, 22, 22, 0.5);
+    color: rgba(0, 255, 140, 0.8);
+}
+
+.largeCard #nome {
+    font-size: 40px;
+}
+
+.largeCard #valorMoeda {
+    font-size: 44px;
+}
+
+.largeCard:hover {
+    transition: 0.5s ease;
+    color: rgba(0, 255, 140, 1);
+    background-color: rgba(22, 22, 22, 1);
+}

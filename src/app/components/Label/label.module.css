@@ -1,0 +1,19 @@
+.label, .greenLabel, .grayLabel {
+    font-size: 24px;
+}
+
+.greenLabel {
+    transition: 0.5s ease;
+    padding: 8px;
+    border-radius: 12px;
+    color: #00FF8C;
+    background-color: rgba(1, 64, 37, 0.5);
+}
+
+.greenLabel:hover {
+    transition: 0.5s ease;
+    padding: 8px;
+    border-radius: 12px;
+    color: #00FF8C;
+    background-color: rgba(22, 22, 22, 0.5);
+}

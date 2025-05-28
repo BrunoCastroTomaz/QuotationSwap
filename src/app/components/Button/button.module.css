@@ -1,0 +1,26 @@
+.backButton {
+    transition: 1s ease-in;
+    width: 70%;
+    border:none;
+    cursor:pointer;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+.backButton:hover {
+    transition: 1s ease-in;
+    background-color: rgb(138, 77, 77);
+}
+
+.backButton:active {
+    transform: scale(0.98);
+}
+
+.backButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(138, 77, 77, 0.5);
+}
+
+.img {
+    width: 15%;
+}

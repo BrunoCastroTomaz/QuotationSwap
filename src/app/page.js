@@ -1,26 +1,38 @@
-import Card from './components/Card';
-import './styles.css';
+"use client"
+
+import Input from "./components/Input/Input";
+import CardMoeda from "./components/CardMoeda/CardMoeda";
+import Grid from "./components/Grid/Grid";
+import Label from "./components/Label/Label";
+import { useState } from "react";
+import Container from "./components/Container/Container";
 
 export default function Home() {
-  // export permite que o componente seja utilizado em outros arquivos
+  const [valorBRL, setValor] = useState(0);
+
+  /* Substituir pelos valores da API */
+  const cotacaoBTC = 4;
+  const cotacaoETH = 3;
+  const cotacaoUSD = 2;
+  const cotacaoCNY = 1;
+
+  const btc = valorBRL * cotacaoBTC;
+  const eth = valorBRL * cotacaoETH;
+  const usd = valorBRL * cotacaoUSD;
+  const cny = valorBRL * cotacaoCNY;
+
+  console.log("Valor atual:", valorBRL);
+
   return (
-    // tudo dentro do return é o que será exibido na tela
-    <div className="container">
-      {/* outer div que envolve todo o conteúdo Em jsx se usa classname ao invés de class */}
-      <h1>MOEDINHAS</h1> 
-      {/* título */}
-      <input className="input-display" type="number" placeholder="0,00 BRL"/> 
-      {/*input insere o valor em reais*/}
-      <p className="label">Converter para</p>
-      <div className="grid">
-        {/* div onde ficam as moedas, cada uma em um card com o valor e o nome */}
-        <Card sigla="CNY" valor="0,00"></Card>
-        <Card sigla="BTC" valor="0,00"></Card>
-        <Card sigla="USD" valor="0,00"></Card>
-        <Card sigla="ETH" valor="0,00"></Card>
-      </div>
-    </div>
+    <Container>
+      <Input onValorChange={(novoValor) => setValor(novoValor)}/>
+      <Label text={"Converter para"}></Label>
+      <Grid>
+        <CardMoeda nome={"BTC"} valorMoeda={btc} cotacao={cotacaoBTC}/>
+        <CardMoeda nome={"CNY"} valorMoeda={cny} cotacao={cotacaoCNY}/>
+        <CardMoeda nome={"USD"} valorMoeda={usd} cotacao={cotacaoUSD}/>
+        <CardMoeda nome={"ETH"} valorMoeda={eth} cotacao={cotacaoETH}/>
+      </Grid>
+    </Container>
   );
 }
-
-
