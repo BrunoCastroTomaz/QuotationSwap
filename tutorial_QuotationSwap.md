@@ -488,3 +488,11 @@ export default function Input({ onValorChange, valor}) {
 - Um campo de input numérico (`type="number"`).
 - Estilizado com `styles.input`.
 - `placeholder`: mostra o valor atual com `BRL` como sufixo, ou `"0,00 BRL"` se não houver valor.
+
+  
+
+---
+
+# Conhecimentos Adquiridos
+
+Dentre os principais conhecimentos adquiridos, podemos destacar o aprendizado das principais funcionalidade do uso do Next.js, como criação de componentes, estilização através de CSS modular, consumo de APIs, uso de hooks e uso de rotas dinâmicas. Além disso, o projeto se demonstrou importante para reforçar conhecimentos base de desenvolvimento web mobile, como HTML, CSS e Javascript. Por fim, é indispensável destacar o aprendizado do trabalho em equipe e de gerenciamento de projeto.
